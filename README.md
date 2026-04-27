@@ -23,10 +23,10 @@ The issue is auto-closed when the endpoint comes back.
 
 ## Endpoints monitored
 
-| Endpoint | What it checks |
-| --- | --- |
-| `https://snake.retrogames1337.com/` | Game loads (HTTP 200, < 4 s) |
-| `https://snake.retrogames1337.com/healthz` | App-level health (HTTP 200, < 1.5 s) |
+| Endpoint                                   | What it checks                              |
+| ------------------------------------------ | ------------------------------------------- |
+| `https://snake.retrogames1337.com/`        | Game loads (HTTP 200, < 4 s)                |
+| `https://snake.retrogames1337.com/healthz` | App-level health (HTTP 200, < 1.5 s)        |
 | `https://snake.retrogames1337.com/metrics` | Prometheus metrics scrape (HTTP 200, < 2 s) |
 
 ## One-time setup (operator)
