@@ -1,36 +1,74 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Upptime config — https://upptime.js.org/docs/configuration
+# Repo this status page lives in
+owner: valikor
+repo: retrogames1337-status
 
+# ---- Endpoints we monitor ----
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
-    check: "tcp-ping"
-    ipv6: true
+  - name: TypeSnake — game
+    url: https://snake.retrogames1337.com/
+    expectedStatusCodes:
+      - 200
+    maxResponseTime: 4000
 
+  - name: TypeSnake — health
+    url: https://snake.retrogames1337.com/healthz
+    expectedStatusCodes:
+      - 200
+    maxResponseTime: 1500
+
+  - name: TypeSnake — metrics
+    url: https://snake.retrogames1337.com/metrics
+    expectedStatusCodes:
+      - 200
+    maxResponseTime: 2000
+
+# ---- Public status site ----
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.retrogames1337.com
+  name: retrogames1337 status
+  introTitle: "**Live status** for retrogames1337 services"
+  introMessage: |
+    This page tracks uptime for snake.retrogames1337.com and related
+    endpoints. Health checks run every 5 minutes via GitHub Actions;
+    incidents are auto-opened as GitHub issues on this repo.
   navbar:
     - title: Status
       href: /
     - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+      href: https://github.com/valikor/retrogames1337-status
+  logoUrl: ""
+  theme: dark
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+# ---- Notifications ----
+# Add a Discord webhook URL as repo secret DISCORD_WEBHOOK_URL to enable.
+notifications:
+  - type: discord
+    webhook: "$DISCORD_WEBHOOK_URL"
+
+# ---- Workflow cadence ----
+# Default upptime cadence; overridable here.
+workflowSchedule:
+  graphs: "0 0 * * *"          # daily — render charts
+  responseTime: "0 23 * * *"   # daily — response-time summary
+  staticSite: "0 1 * * *"      # daily — rebuild static site
+  summary: "0 0 * * *"         # daily — README summary
+  updates: "0 3 * * *"         # daily — check for upptime updates
+  updateTemplate: "0 3 * * 0"  # weekly — template updates
+  uptime: "*/5 * * * *"        # every 5 min — uptime checks
+
+# ---- Misc tunables ----
+# Open an issue automatically if a site is down
+i18n:
+  activeIncidents: Active incidents
+  allSystemsOperational: All systems operational
+  incidentReport: "Incident report"
+  pastIncidents: Past incidents
+
+# Don't commit logs / blame the bot
+commitMessages:
+  readmeContent: ":pencil: Update summary in README [skip ci] [upptime]"
+  summaryJson: ":card_file_box: Update status summary [skip ci] [upptime]"
+  statusChange: "$EMOJI $SITE_NAME is $STATUS ($RESPONSE_CODE in $RESPONSE_TIME ms) [skip ci] [upptime]"
+  commitAuthorName: Upptime Bot
+  commitAuthorEmail: upptime-bot@users.noreply.github.com
