@@ -5,17 +5,19 @@
     "icon": "https://icons.duckduckgo.com/ip3/snake.retrogames1337.com.ico",
     "slug": "type-snake-game",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "uptime": "99.99%",
+    "uptimeDay": "99.92%",
+    "uptimeWeek": "99.99%",
+    "uptimeMonth": "99.99%",
+    "uptimeYear": "99.99%",
     "time": 475,
     "timeDay": 677,
     "timeWeek": 544,
     "timeMonth": 475,
     "timeYear": 475,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-05-05": 1
+    }
   },
   {
     "name": "TypeSnake — health",
@@ -23,17 +25,19 @@
     "icon": "https://icons.duckduckgo.com/ip3/snake.retrogames1337.com.ico",
     "slug": "type-snake-health",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "uptime": "99.99%",
+    "uptimeDay": "99.96%",
+    "uptimeWeek": "99.99%",
+    "uptimeMonth": "99.99%",
+    "uptimeYear": "99.99%",
     "time": 89,
     "timeDay": 131,
     "timeWeek": 103,
     "timeMonth": 89,
     "timeYear": 89,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-05-05": 1
+    }
   },
   {
     "name": "TypeSnake — metrics",
@@ -42,7 +46,7 @@
     "slug": "type-snake-metrics",
     "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
@@ -51,6 +55,8 @@
     "timeWeek": 103,
     "timeMonth": 89,
     "timeYear": 89,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-05-05": 0
+    }
   }
 ]
