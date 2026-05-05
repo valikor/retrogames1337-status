@@ -5,18 +5,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/snake.retrogames1337.com.ico",
     "slug": "type-snake-game",
     "status": "down",
-    "uptime": "99.99%",
-    "uptimeDay": "99.92%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "99.99%",
-    "uptimeYear": "99.99%",
-    "time": 475,
-    "timeDay": 677,
-    "timeWeek": 544,
-    "timeMonth": 475,
-    "timeYear": 475,
+    "uptime": "95.91%",
+    "uptimeDay": "65.39%",
+    "uptimeWeek": "95.06%",
+    "uptimeMonth": "95.91%",
+    "uptimeYear": "95.91%",
+    "time": 478,
+    "timeDay": 588,
+    "timeWeek": 538,
+    "timeMonth": 478,
+    "timeYear": 478,
     "dailyMinutesDown": {
-      "2026-05-05": 1
+      "2026-05-05": 498
     }
   },
   {
@@ -25,18 +25,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/snake.retrogames1337.com.ico",
     "slug": "type-snake-health",
     "status": "down",
-    "uptime": "99.99%",
-    "uptimeDay": "99.96%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "99.99%",
-    "uptimeYear": "99.99%",
-    "time": 89,
-    "timeDay": 131,
-    "timeWeek": 103,
-    "timeMonth": 89,
-    "timeYear": 89,
+    "uptime": "95.92%",
+    "uptimeDay": "65.43%",
+    "uptimeWeek": "95.06%",
+    "uptimeMonth": "95.92%",
+    "uptimeYear": "95.92%",
+    "time": 100,
+    "timeDay": 164,
+    "timeWeek": 115,
+    "timeMonth": 100,
+    "timeYear": 100,
     "dailyMinutesDown": {
-      "2026-05-05": 1
+      "2026-05-05": 498
     }
   },
   {
@@ -45,18 +45,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/snake.retrogames1337.com.ico",
     "slug": "type-snake-metrics",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.99%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 89,
-    "timeDay": 132,
-    "timeWeek": 103,
-    "timeMonth": 89,
-    "timeYear": 89,
+    "uptime": "95.92%",
+    "uptimeDay": "65.46%",
+    "uptimeWeek": "95.07%",
+    "uptimeMonth": "95.92%",
+    "uptimeYear": "95.92%",
+    "time": 87,
+    "timeDay": 102,
+    "timeWeek": 99,
+    "timeMonth": 87,
+    "timeYear": 87,
     "dailyMinutesDown": {
-      "2026-05-05": 0
+      "2026-05-05": 497
     }
   }
 ]
