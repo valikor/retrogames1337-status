@@ -1,7 +1,7 @@
 url: https://snake.retrogames1337.com/healthz
-status: up
+status: degraded
 code: 200
-responseTime: 173
-lastUpdated: 2026-05-31T00:03:15.644Z
+responseTime: 3161
+lastUpdated: 2026-05-31T22:18:06.476Z
 startTime: 2026-04-27T06:41:06.234Z
 generator: Upptime <https://github.com/upptime/upptime>
